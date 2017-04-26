@@ -16,12 +16,7 @@ namespace MVC5T_CallOver.Controllers
         {
             return View();
         }
-
-        public ActionResult Indexv2()
-        {
-            return View();
-        }
-
+        
         public ActionResult Loader()
         {
             return View();
@@ -67,29 +62,5 @@ namespace MVC5T_CallOver.Controllers
 
             return File(fileContents, "application/pdf", fileName);//return File(fileContents, contentType, fileName);
         }
-
-        //public ActionResult TestInfo_Read([DataSourceRequest]DataSourceRequest request)
-        //{
-        //    var context = MvcApplication.MacDocsSession;
-
-        //    var model = context.Query<CargoCrControlCnum>();
-
-        //    DataSourceResult result = model.AsQueryable().ToDataSourceResult(request, ModelState, m => new vm_CargoControl()
-        //    {
-        //        Location = m.Location,
-        //        VoyageNo = m.VoyageNo,
-        //        Direction = m.Direction,
-        //        BaseFrom = m.BaseFrom,
-        //        BaseTo = m.BaseTo,
-        //        BillNo = m.BillNo,
-        //        Account = m.Account,
-        //        Name = m.Name,
-        //        ContainerNo = m.ContainerNo,
-        //        ContainerType = m.ContainerType,
-        //        ContainerLength = m.ContainerLength
-        //    });
-
-        //    return Json(result, JsonRequestBehavior.AllowGet);
-        //}
     }
 }
