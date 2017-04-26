@@ -113,7 +113,6 @@ namespace MVC5T_CallOver.ViewModels
                         return "OFF DATE";
                     else
                         return "ON DATE";
-
                 }
                 else
                 {
