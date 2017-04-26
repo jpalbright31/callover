@@ -38,10 +38,10 @@ namespace MVC5T_CallOver.Controllers
                 HaulierAC = m.HaulierAC,
                 HaulierName = m.HaulierName,
                 DestinationOrigin = m.DestinationOrigin,
-                dbBookingDate = m.BookingDate,//(m.BookingDate.HasValue) ? m.BookingDate.Value : new DateTime(),
-                dbBookingTime = m.BookingTime,//(m.BookingTime.HasValue) ? m.BookingTime.Value : new TimeSpan(),
-                dbGateDate = m.GateDate,//(m.GateDate.HasValue) ? m.GateDate.Value : new DateTime(),
-                dbGateTime = m.GateTime//(m.GateTime.HasValue) ? m.GateTime.Value : new TimeSpan()
+                dbBookingDate = m.BookingDate,
+                dbBookingTime = m.BookingTime,
+                dbGateDate = m.GateDate,
+                dbGateTime = m.GateTime
             });
 
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -60,7 +60,7 @@ namespace MVC5T_CallOver.Controllers
         {
             var fileContents = Convert.FromBase64String(base64);
 
-            return File(fileContents, "application/pdf", fileName);//return File(fileContents, contentType, fileName);
+            return File(fileContents, "application/pdf", fileName);
         }
     }
 }
