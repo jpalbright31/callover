@@ -232,7 +232,7 @@
     })
 </script>
 
-
+//subtable
 <script id="template" type="text/kendo-tmpl">
     <table class="table table-condensed table-bordered">
         <thead>
@@ -266,9 +266,9 @@
     var rowTemplate = kendo.template($('#alt-template').html());
 </script>
 
-
 <script type="text/javascript">
     var exportFlag = false;
+    //get the booking time and gate time columns with good format
     function onExcelExport(e) {
         var data = e.sender.dataSource.data();
         var sheet = e.workbook.sheets[0];
@@ -283,7 +283,7 @@
             row.cells[8].value = (bookingTime) ? moment(bookingTime).format('HH:mm:ss') : "";
             row.cells[10].value = (gateTime) ? moment(gateTime).format('HH:mm:ss') : "";
 
-
+            //green rows if on date else red rows on excel export
             for (var cellIndex = 0; cellIndex < (row.cells.length) ; cellIndex++) {
                 var cell = row.cells[cellIndex];
 
@@ -294,7 +294,8 @@
                 }
             }
         }
-
+        
+        //show Band 1 to 4 on excel export
         if (!exportFlag) {
             e.sender.showColumn("Band1");
             e.sender.showColumn("Band2");
@@ -326,6 +327,7 @@
         });
     }
 
+    // subtable rows: colors depending of the value
     function changeRow(row, value) {
         if (value == "CHECK") {
             row.addClass("red");
