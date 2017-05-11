@@ -222,5 +222,4 @@ namespace MVC5T_CallOver.ViewModels
             }
         }
     }
-
 }
