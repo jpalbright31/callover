@@ -1,73 +1,3 @@
-<style>
-    .red {
-        margin-bottom: 0px;
-        border-radius: 0px;
-        background-color: rgba(255,199, 206, 1);
-        color: rgb(156,0,6);
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .amber {
-        margin-bottom: 0px;
-        border-radius: 0px;
-        background-color: rgba(255,235, 156, 1);
-        color: rgb(156, 101, 0);
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .green {
-        margin-bottom: 0px;
-        border-radius: 0px;
-        background-color: rgba(198,239, 206, 1);
-        color: rgb(0,97, 0);
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .navbar-inverse .navbar-brand:hover {
-        color: white;
-    }
-
-    .navbar-inverse {
-        background-color: rgb(57, 168, 232);
-    }
-
-    .table > thead > tr > th {
-        text-align: center;
-    }
-
-    .table > tfoot > tr > th {
-        text-align: center;
-    }
-
-    .alert {
-        margin-bottom: 0px;
-        border-radius: 0px;
-    }
-
-    .k-grid-excel {
-        color: rgb(0,97, 0);
-        background-color: rgba(198,239, 206, 1);
-    }
-
-    .k-grid-pdf {
-        color: rgb(156,0,6);
-        background-color: rgba(255,199, 206, 1);
-    }
-
-    .k-grid-excel:hover {
-        color: white;
-        background-color: rgb(124, 203, 139);
-    }
-
-    .k-grid-pdf:hover {
-        color: white;
-        background-color: rgb(237, 151, 162);
-    }
-</style>
-
 @Html.Partial("_Loader")
 
 @(Html.Kendo().Grid<vm_Container>()
@@ -219,6 +149,76 @@
     .Reorderable(reorder => reorder.Columns(true))
     .HtmlAttributes(new { @class = "kendoGrid", @style = "height:800px;max-height:100%;" })
 )
+
+<style>
+    .red {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        background-color: rgba(255,199, 206, 1);
+        color: rgb(156,0,6);
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .amber {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        background-color: rgba(255,235, 156, 1);
+        color: rgb(156, 101, 0);
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .green {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        background-color: rgba(198,239, 206, 1);
+        color: rgb(0,97, 0);
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .navbar-inverse .navbar-brand:hover {
+        color: white;
+    }
+
+    .navbar-inverse {
+        background-color: rgb(57, 168, 232);
+    }
+
+    .table > thead > tr > th {
+        text-align: center;
+    }
+
+    .table > tfoot > tr > th {
+        text-align: center;
+    }
+
+    .alert {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .k-grid-excel {
+        color: rgb(0,97, 0);
+        background-color: rgba(198,239, 206, 1);
+    }
+
+    .k-grid-pdf {
+        color: rgb(156,0,6);
+        background-color: rgba(255,199, 206, 1);
+    }
+
+    .k-grid-excel:hover {
+        color: white;
+        background-color: rgb(124, 203, 139);
+    }
+
+    .k-grid-pdf:hover {
+        color: white;
+        background-color: rgb(237, 151, 162);
+    }
+</style>
 
 <script src="~/Scripts/kendo/2017.1.223/pako_deflate.min.js"></script>
 
