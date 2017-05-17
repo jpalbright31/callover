@@ -1,6 +1,6 @@
 # Callover
 
-A sample code displaying a SQL database in a grid with Excel/PDF export
+A grid displaying a SQL database with Excel/PDF export
 
 ## Languages/Frameworks/Technologies
 * C#
