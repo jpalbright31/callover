@@ -47,11 +47,11 @@ namespace MVC5T_CallOver.ViewModels
                 {
                     return new DateTime(1, 1, 1, dbBookingTime.Value.Hours, dbBookingTime.Value.Minutes, dbBookingTime.Value.Seconds);
                 }
-                if (dbBookingDate.HasValue && !dbBookingTime.HasValue)
+                else if (dbBookingDate.HasValue && !dbBookingTime.HasValue)
                 {
                     return new DateTime(1, 1, 1, dbBookingTime.Value.Hours, dbBookingTime.Value.Minutes, dbBookingTime.Value.Seconds);
                 }
-                if (!dbBookingDate.HasValue && dbBookingTime.HasValue)
+                else if (!dbBookingDate.HasValue && dbBookingTime.HasValue)
                 {
                     return new DateTime(1, 1, 1, dbBookingTime.Value.Hours, dbBookingTime.Value.Minutes, dbBookingTime.Value.Seconds);
                 }
@@ -77,11 +77,11 @@ namespace MVC5T_CallOver.ViewModels
                 {
                     return new DateTime(1, 1, 1, dbGateTime.Value.Hours, dbGateTime.Value.Minutes, dbGateTime.Value.Seconds);
                 }
-                if (dbGateDate.HasValue && !dbGateTime.HasValue)
+                else if (dbGateDate.HasValue && !dbGateTime.HasValue)
                 {
                     return new DateTime(1, 1, 1, dbGateTime.Value.Hours, dbGateTime.Value.Minutes, dbGateTime.Value.Seconds);
                 }
-                if (!dbGateDate.HasValue && dbGateTime.HasValue)
+                else if (!dbGateDate.HasValue && dbGateTime.HasValue)
                 {
                     return new DateTime(1, 1, 1, dbGateTime.Value.Hours, dbGateTime.Value.Minutes, dbGateTime.Value.Seconds);
                 }
