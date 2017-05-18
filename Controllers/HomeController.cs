@@ -1,10 +1,7 @@
-﻿using Kendo.Mvc.UI;
+using Kendo.Mvc.UI;
 using Kendo.Mvc.Extensions;
 using MVC5T_CallOver.DAL.CallOver;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using MVC5T_CallOver.ViewModels;
 
