@@ -1,7 +1,5 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
-using System.Web.Script.Serialization;
 
 namespace MVC5T_CallOver.ViewModels
 {
