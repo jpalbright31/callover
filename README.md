@@ -2,9 +2,9 @@
 
 A grid displaying a SQL database with Excel/PDF export
 
-## Languages/Frameworks/Technologies
-* C#
-* ASP.NET MVC
-* Javascript / jQuery
-* Telerik UI for ASP.NET MVC
-
+## Technologies
+- ASP.NET C#
+- MVC 5 Razor
+- Javascript / jQuery
+- Telerik UI
+- SQL Server
