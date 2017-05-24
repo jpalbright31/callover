@@ -227,12 +227,14 @@
         var grid = $('#grid').data('kendoGrid');
     });
 
+    var rowTemplate = kendo.template($('#alt-template').html());
+
     $(window).load(function () {
         $(".loader").fadeOut();
     })
 </script>
 
-//subtable
+//subtables
 <script id="template" type="text/kendo-tmpl">
     <table class="table table-condensed table-bordered">
         <thead>
@@ -260,10 +262,6 @@
             </tr>
         </tfoot>
     </table>
-</script>
-
-<script>
-    var rowTemplate = kendo.template($('#alt-template').html());
 </script>
 
 <script type="text/javascript">
@@ -327,8 +325,8 @@
         });
     }
 
-    // subtable rows: colors depending of the value
-    function changeRow(row, value) {
+    // color of rows depending on the value of subtables
+    function changeColorRow(row, value) {
         if (value == "CHECK") {
             row.addClass("red");
             row.removeClass("green");
@@ -360,6 +358,7 @@
         }
     }
 
+    // subtable rows: colors depending of the value
     function valCheck(value) {
         if (value == "CHECK")
             return "red";
