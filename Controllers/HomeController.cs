@@ -22,7 +22,6 @@ namespace MVC5T_CallOver.Controllers
         public ActionResult Containers_Read([DataSourceRequest]DataSourceRequest request)
         {
             var db = new CallOverContext();
-
             var model = db.Containers;
 
             DataSourceResult result = model.ToDataSourceResult(request, ModelState, m => new vm_Container()
@@ -48,7 +47,6 @@ namespace MVC5T_CallOver.Controllers
         public ActionResult Excel_Export_Save(string contentType, string base64, string fileName)
         {
             var fileContents = Convert.FromBase64String(base64);
-
             return File(fileContents, contentType, fileName);
         }
 
@@ -56,7 +54,6 @@ namespace MVC5T_CallOver.Controllers
         public ActionResult Pdf_Export_Save(string contentType, string base64, string fileName)
         {
             var fileContents = Convert.FromBase64String(base64);
-
             return File(fileContents, "application/pdf", fileName);
         }
     }
