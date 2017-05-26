@@ -35,9 +35,6 @@ namespace MVC5T_CallOver.ViewModels
             {
 	    	return dbBookingDate ?? null;
             }
-	    set
-	    {
-	    }
         }
 
         public DateTime? BookingTime
@@ -58,10 +55,7 @@ namespace MVC5T_CallOver.ViewModels
                 }
 
                 return null;
-            }
-	    set
-	    {
-	    }    
+            }   
         }
 
         [Display(Name = "Gate Date")]
@@ -71,9 +65,6 @@ namespace MVC5T_CallOver.ViewModels
             {
                 return dbGateDate ?? null;
             }
-	    set
-	    {
-	    }
         }
 
         public DateTime? GateTime
@@ -95,9 +86,6 @@ namespace MVC5T_CallOver.ViewModels
 
                 return null;
             }
-	    set
-	    {
-	    }
         }
 
         [ScaffoldColumn(false)]
@@ -129,9 +117,6 @@ namespace MVC5T_CallOver.ViewModels
                     return "CHECK";
                 }
             }
-	    set
-	    {
-	    }
         }
 
         [ScaffoldColumn(false)]
@@ -158,9 +143,6 @@ namespace MVC5T_CallOver.ViewModels
                     return "CHECK 1";
                 }
             }
-	    set
-	    {
-	    }
         }
 
         [ScaffoldColumn(false)]
@@ -187,9 +169,6 @@ namespace MVC5T_CallOver.ViewModels
                     return "CHECK 2";
                 }
             }
-	    set
-	    {
-	    }
         }
 
         [ScaffoldColumn(false)]
@@ -216,9 +195,6 @@ namespace MVC5T_CallOver.ViewModels
                     return "CHECK 3";
                 }
             }
-	    set
-	    {
-	    }
         }
 
         [ScaffoldColumn(false)]
@@ -242,9 +218,6 @@ namespace MVC5T_CallOver.ViewModels
                     return "CHECK 4";
                 }
             }
-	    set
-	    {
-	    }
         }
     }
 }
